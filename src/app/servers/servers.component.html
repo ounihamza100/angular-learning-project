@@ -1,1 +1,10 @@
-<p>servers works!</p>
+<button class="btn btn-primary"
+        [disabled]="!allowNwServer"
+        (click)="onCreateServer()"
+>
+Add Sever
+</button>
+<p>{{serverCreationStatus}}</p>
+<app-server></app-server>
+<app-server></app-server>
+
