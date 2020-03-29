@@ -12,4 +12,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-app';
+  userName = 'Hamza ouni';
+
+  isUserNameEmpty() : boolean {
+    if(this.userName.length ==  0)
+      return true;
+    else return false;
+
+  }
+
+  resetUsername() {
+    this.userName = '';
+  }
 }
